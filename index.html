@@ -1,0 +1,263 @@
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shopify Online Store</title>
+
+  <link rel="icon" type="image/jpg" href="./image/logo.jpg">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+  <div class="container">
+    
+    <a class="navbar-brand brand-text" href="index.html">Shopify</a>
+
+    <button class="navbar-toggler border-0" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      
+      <ul class="navbar-nav align-items-lg-center gap-lg-1 me-3">
+
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+
+      </ul>
+
+      <a href="login.html" class="btn btn-primary btn-login">Login</a>
+
+    </div>
+  </div>
+</nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container h-100 position-relative">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-6 col-md-8">
+          <h1 class="hero-title">Welcome to Shopify Online Store</h1>
+          <p class="hero-sub">Discover our curated collection of high-quality products designed to fit
+          your lifestyle. Quality meets convenience at your fingertips.</p>
+          <div class="hero-btns">
+            <a href="#products" class="btn btn-primary btn-hero-solid">Shop Now</a>
+            <a href="#" class="btn btn-hero-outline">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCTS -->
+  <section class="products-section" id="products">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="section-title">Featured Products</h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="product-card">
+            <div class="product-img">
+              <img src="image/watch.jpg" alt="Watch"/>
+            </div>
+            <div class="product-info">
+              <h6 class="product-name">Modern Minimalist Watch</h6>
+              <p class="product-price">$129.00</p>
+              <button class="btn btn-add" onclick="addToCart()">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="product-card">
+            <div class="product-img">
+              <img src="image/headphone.jpg" alt="Headphones"/>
+            </div>
+            <div class="product-info">
+              <h6 class="product-name">Wireless Noise Cancelling Headphones</h6>
+              <p class="product-price">$299.00</p>
+              <button class="btn btn-add" onclick="addToCart()">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="product-card">
+            <div class="product-img">
+              <img src="image/samarthome.jpg" alt="Smart Hub"/>
+            </div>
+            <div class="product-info">
+              <h6 class="product-name">Smart Home Hub Controller</h6>
+              <p class="product-price">$89.00</p>
+              <button class="btn btn-add" onclick="addToCart()">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="product-card">
+            <div class="product-img">
+              <img src="image/wallet.jpg" alt="Wallet"/>
+            </div>
+            <div class="product-info">
+              <h6 class="product-name">Premium Leather Wallet</h6>
+              <p class="product-price">$45.00</p>
+              <button class="btn btn-add" onclick="addToCart()">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="product-card">
+            <div class="product-img">
+              <img src="image/iphone11.jpg" alt='iPhone 11'/>
+            </div>
+            <div class="product-info">
+              <h6 class="product-name">iPhone 11</h6>
+              <p class="product-price">$65.00</p>
+              <button class="btn btn-add" onclick="addToCart()">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="product-card">
+            <div class="product-img">
+              <img src="image/ipad.jpg" alt="iPad"/>
+            </div>
+            <div class="product-info">
+              <h6 class="product-name">iPad</h6>
+              <p class="product-price">$350.00</p>
+              <button class="btn btn-add" onclick="addToCart()">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="product-card">
+            <div class="product-img">
+              <img src="image/macbook.jpg" alt="MacBook"/>
+            </div>
+            <div class="product-info">
+              <h6 class="product-name">Macbook</h6>
+              <p class="product-price">$159.00</p>
+              <button class="btn btn-add" onclick="addToCart()">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="product-card">
+            <div class="product-img">
+              <img src="image/desktop.jpg" alt="Desktop"/>
+            </div>
+            <div class="product-info">
+              <h6 class="product-name">Desktop </h6>
+              <p class="product-price">$79.00</p>
+              <button class="btn btn-add" onclick="addToCart()">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="product-card">
+            <div class="product-img">
+              <img src="image/iphone17.jpg" alt="iPhone 17"/>
+            </div>
+            <div class="product-info">
+              <h6 class="product-name">Iphone 17 pro max</h6>
+              <p class="product-price">$110.00</p>
+              <button class="btn btn-add" onclick="addToCart()">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-brand">Shopify</h5>
+          <p class="footer-desc">Leading the way in digital commerce.
+          Providing the best tools for merchants and the best experiences for shoppers.</p>
+        </div>
+
+        <div class="col-lg-2 col-md-3 offset-lg-1">
+          <h6 class="footer-heading">QUICK LINKS</h6>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3">
+          <h6 class="footer-heading">SUPPORT</h6>
+          <ul class="footer-links">
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h6 class="footer-heading">FOLLOW US</h6>
+          <div class="social-row">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+
+      </div>
+      <hr class="footer-hr"/>
+      <p class="footer-copy">© 2023 shopify online Store. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="cartToast" class="toast text-white border-0" style="background:#2563eb; border-radius:10px;">
+      <div class="d-flex">
+        <div class="toast-body"><i class="bi bi-cart-check me-2"></i>Item added to cart!</div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function addToCart() {
+      const toast = new bootstrap.Toast(document.getElementById('cartToast'), { delay: 2000 });
+      toast.show();
+    }
+  </script>
+</body>
+</html>
